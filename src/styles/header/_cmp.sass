@@ -1,0 +1,22 @@
+@mixin header_cmp
+  .badge_cmp, .tag_cmp
+    padding: 1rem 2rem
+    border: #fff
+    border-radius: 15px
+    flex-direction: row
+    width: auto
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1)
+  .tag_cmp
+    margin-top: 3rem
+    flex-direction: column
+    p 
+      width: 100%
+      text-align: right
+      text-transform: uppercase 
+  span
+    font-size: 2.5rem
+    @media screen and (min-width: 2000px)
+      font-size: 5px
+  @media screen and (max-width: 1200px)
+    align-items: flex-start
+    justify-content: flex-start
